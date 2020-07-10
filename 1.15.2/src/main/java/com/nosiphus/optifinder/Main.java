@@ -19,7 +19,6 @@ public class Main {
     public Main() {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         
         MinecraftForge.EVENT_BUS.register(this);
         
@@ -28,12 +27,6 @@ public class Main {
     private void setup(final FMLCommonSetupEvent event) {
     	
         ScanModsFolder.main(Reference.VERSION);
-        
-    }
-
-    private void doClientStuff(final FMLClientSetupEvent event) {
-    	
-        
         
     }
 

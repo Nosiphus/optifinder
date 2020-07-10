@@ -53,14 +53,22 @@ public class ScanModsFolder {
 		} else {
 			
 			System.out.println("OptiFine is not installed, exiting.");
-			downloader(version);
-			Window.main(version);
+			
+			//The current problem with the code rests right here. Further information on the new event system is needed.
+			
+			//For now, we shall set the game to terminate right here.
+			
+			System.exit(0);
+			
+			
+			//downloader(version);
+			//Window.main(version);
 			
 		}
 		
 	}
 
-	public static void downloader(String version) {
+	public void downloader(String version) {
 		
 		try {
 			
