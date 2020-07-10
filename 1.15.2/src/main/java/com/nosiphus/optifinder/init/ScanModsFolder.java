@@ -68,7 +68,7 @@ public class ScanModsFolder {
 		
 	}
 
-	public void downloader(String version) {
+	public static void downloader(String version) {
 		
 		try {
 			
