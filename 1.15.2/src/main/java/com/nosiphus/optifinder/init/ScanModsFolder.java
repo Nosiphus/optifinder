@@ -60,7 +60,6 @@ public class ScanModsFolder {
 			
 			System.exit(0);
 			
-			
 			//downloader(version);
 			//Window.main(version);
 			

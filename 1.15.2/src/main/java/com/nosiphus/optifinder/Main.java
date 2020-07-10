@@ -1,6 +1,5 @@
 package com.nosiphus.optifinder;
 
-import com.nosiphus.optifinder.init.ScanModsFolder;
 import com.nosiphus.optifinder.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +18,7 @@ public class Main {
     public Main() {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         
         MinecraftForge.EVENT_BUS.register(this);
         
@@ -26,7 +26,13 @@ public class Main {
 
     private void setup(final FMLCommonSetupEvent event) {
     	
-        ScanModsFolder.main(Reference.VERSION);
+    	
+        
+    }
+
+    private void doClientStuff(final FMLClientSetupEvent event) {
+    	
+        
         
     }
 
