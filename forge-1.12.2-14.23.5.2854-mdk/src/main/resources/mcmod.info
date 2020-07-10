@@ -1,0 +1,16 @@
+[
+{
+  "modid": "optifinder",
+  "name": "OptiFinder",
+  "description": "A small mod that reminds users to add OptiFine to their modpacks.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://www.nosiphus.com/minecraft/optifinder",
+  "updateUrl": "",
+  "authorList": ["Nosiphus"],
+  "credits": "Nosiphus",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
