@@ -1,0 +1,41 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+issueTrackerURL="https://github.com/Nosiphus/optifinder/issues" #optional
+
+[[mods]] #mandatory
+
+modId="optifinder" #mandatory
+
+version="1.16.1_HD_U_G2_pre3" #mandatory
+
+displayName="OptiFinder" #mandatory
+
+updateJSONURL="https://www.nosiphus.com/" #optional
+
+displayURL="https://www.nosiphus.com/" #optional
+
+logoFile="examplemod.png" #optional
+
+credits="Nosiphus" #optional
+
+authors="Nosiphus" #optional
+
+description='''
+A small mod that reminds users to add OptiFine to their modpacks.
+'''
+
+[[dependencies.examplemod]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[32,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.1]"
+    ordering="NONE"
+    side="BOTH"

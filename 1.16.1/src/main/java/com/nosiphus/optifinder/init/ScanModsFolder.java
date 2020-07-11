@@ -53,15 +53,8 @@ public class ScanModsFolder {
 		} else {
 			
 			System.out.println("OptiFine is not installed, exiting.");
-			
-			//The current problem with the code rests right here. Further information on the new event system is needed.
-			
-			//For now, we shall set the game to terminate right here.
-			
-			System.exit(0);
-			
-			//downloader(version);
-			//Window.main(version);
+			downloader(version);
+			Window.main(version);
 			
 		}
 		
@@ -71,7 +64,9 @@ public class ScanModsFolder {
 		
 		try {
 			
-			String page = "https://www.nosiphus.com/minecraft/optifinder/" + version;
+			String page = "https://www.nosiphus.com/minecraft/mods/optifinder/" + version;
+			
+			System.setProperty("java.awt.headless", "false");
 			
 			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 				

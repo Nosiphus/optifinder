@@ -13,7 +13,6 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
 public class Window extends JDialog {
 	
 	private static final long serialVersionUID = 1L;
@@ -64,6 +63,7 @@ public class Window extends JDialog {
 	
 	public static void main(String version) {
 		
+		System.setProperty("java.awt.headless", "false");
 		new Window(new JFrame(), "Install OptiFine", "You do not have the present version of OptiFine. Read the instructions on the page for how to add it.", version);
 		
 	}
