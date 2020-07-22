@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/Nosiphus/optifinder/issues" #optional
 
 modId="optifinder" #mandatory
 
-version="1.16.1_HD_U_G2_pre5" #mandatory
+version="1.16.1_HD_U_G2_pre7" #mandatory
 
 displayName="OptiFinder" #mandatory
 
