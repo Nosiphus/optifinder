@@ -13,9 +13,9 @@ public class OptiFinder {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-    	
-    	ScanModsFolder.main(Reference.VERSION);
-    	
+
+        ScanModsFolder.main(Reference.VERSION);
+
     }
 
 }
