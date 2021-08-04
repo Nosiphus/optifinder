@@ -22,7 +22,7 @@ public class ScanModsFolder {
 			@Override
 			public boolean accept(File dir, String name) {
 				
-				if(name.contentEquals("OptiFine_" + version + "_MOD.jar")) {
+				if(name.contentEquals("OptiFine_" + version + ".jar")) {
 					
 					isPresent = true;
 					return true;
