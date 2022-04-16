@@ -12,6 +12,10 @@ public class ScanModsFolder {
 	String location = (new File("mods")).getAbsolutePath();
 	String[] mods;
 	boolean isPresent;
+
+	static {
+		System.setProperty("java.awt.headless", "false");
+	}
 	
 	public ScanModsFolder(final String version) {
 		
@@ -65,8 +69,6 @@ public class ScanModsFolder {
 		try {
 			
 			String page = "https://www.nosiphus.com/minecraft/mods/optifinder/" + version;
-			
-			System.setProperty("java.awt.headless", "false");
 			
 			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 				

@@ -17,6 +17,10 @@ public class Window extends JDialog {
 	
 	private static final long serialVersionUID = 1L;
 
+	static {
+		System.setProperty("java.awt.headless", "false");
+	}
+
 	public Window(JFrame parent, String title, String message, String version) {
 		
 		super(parent, title, true);
@@ -62,8 +66,7 @@ public class Window extends JDialog {
 	}
 	
 	public static void main(String version) {
-		
-		System.setProperty("java.awt.headless", "false");
+
 		new Window(new JFrame(), "Install OptiFine", "You do not have the present version of OptiFine. Read the instructions on the page for how to add it.", version);
 		
 	}
